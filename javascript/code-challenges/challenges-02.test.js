@@ -107,13 +107,7 @@ For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 const evenOdd = (arr) => {
   // Solution code here...
   return arr.map(num => {
-    if (num % 2 === 0) {
-      return 'even';
-    } else if (num % 2 === 1) {
-      return 'odd';
-    } else {
-      return 'N/A';
-    }
+    return typeof num === 'number' ? (num % 2 === 0 ? 'even' : 'odd') : 'N/A';
   });
 };
 
