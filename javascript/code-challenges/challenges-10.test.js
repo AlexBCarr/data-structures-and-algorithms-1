@@ -75,7 +75,7 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  return stores[0].map((_, i) => stores.reduce((sum, store) => sum + store[i], 0));
+  return stores[0].map((num, i) => stores.reduce((sum, store) => sum + store[i], 0));
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
